@@ -1,0 +1,27 @@
+<html>
+<head>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>  
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.min.js"></script> <!--src we are adding cdn, and for routing we need to keep -route after angular in cdn this is diffrent cdn required -->
+<script type="text/javascript" src="./controller.js"></script>
+ 
+</head>
+
+<body ng-app = "MyApp2">
+
+<div ng-controller = "mainCtrl">
+<Strong> Main Page   first Controll !!!</strong>
+
+<button ng-click = "loginFunction()">
+Login
+</button>
+
+</div>
+
+<ng-view>  <!-- to render the html templetes here -->
+
+</ng-view>
+
+
+</body>
+</html>
